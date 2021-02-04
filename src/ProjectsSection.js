@@ -4,24 +4,31 @@ import ProjectPhoto2 from "./assets/images/ProjectPhoto2.jpg";
 import ProjectPhoto3 from "./assets/images/ProjectPhoto3.jpg";
 import GitHubLogo from "./assets/GitHubLogo.png";
 import LaunchIcon from "./assets/LaunchIcon.png";
+import Button from "@material-ui/core/Button";
 
 export default function Projects() {
+  function getTechList(tech) {
+    return tech.map((name, index) => (
+      <p key={name + index} className="tech-name">
+        {name}
+      </p>
+    ));
+  }
+
   return (
     <div className="projects-list">
       <h1>Projects</h1>
       <div className="project">
-        <img src={ProjectPhoto1} class="project-photo"/>
+        <img src={ProjectPhoto1} className="project-photo" />
         <div className="project-info">
-          <h2 class="project-title">Personal Portfolio</h2>
-          <p class="project-description">
+          <h2 className="project-title">Personal Portfolio</h2>
+          <p className="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+          <ProjectTechnologies>
+            {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
+          </ProjectTechnologies>
         </div>
         <div className="project-links">
           <ProjectLink
@@ -35,32 +42,22 @@ export default function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={ProjectPhoto2} class="project-photo"/>
+        <img src={ProjectPhoto2} className="project-photo" />
         <div className="project-info">
-          <h2 class="project-title">Sample Project</h2>
-          <p class="project-description">
+          <h2 className="project-title">Sample Project</h2>
+          <p className="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>
       <div className="project">
-        <img src={ProjectPhoto3} class="project-photo"/>
+        <img src={ProjectPhoto3} className="project-photo" />
         <div className="project-info">
-          <h2 class="project-title">Sample Project 2</h2>
-          <p class="project-description">
+          <h2 className="project-title">Sample Project 2</h2>
+          <p className="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>
@@ -79,9 +76,19 @@ function ProjectLink({ type, link }) {
 
   return (
     <div className="project-link">
-      <a href={link} target="_blank">
-        <img src={getIcon()}/>
-      </a>
+      <Button
+        variant="outlined"
+        color="default"
+        onClick={() => window.open(link, "_blank")}
+        size="small"
+      >
+        <img src={getIcon()} />
+        &nbsp;&nbsp;{type}
+      </Button>
     </div>
   );
+}
+
+function ProjectTechnologies({ children }) {
+  return <div className="project-tech">{children}</div>;
 }
