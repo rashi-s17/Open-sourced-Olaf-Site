@@ -6,6 +6,7 @@ import GitHubLogo from "./assets/GitHubLogo.png";
 import LaunchIcon from "./assets/LaunchIcon.png";
 import Button from "@material-ui/core/Button";
 import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const isNarrow = useMediaQuery({ query: "(max-width: 900px" });
@@ -26,29 +27,36 @@ export default function Projects() {
   return (
     <div className="projects-list">
       <h1>Projects</h1>
-      <div className={projectClass}>
-        <img src={ProjectPhoto1} className="project-photo" />
-        <div className="project-info">
-          <h2 className="project-title">Personal Portfolio</h2>
-          <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <ProjectTechnologies>
-            {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
-          </ProjectTechnologies>
-          <div className="project-links">
-            <ProjectLink
-              type="GitHub"
-              link="https://github.com/MLH-Fellowship/portfolio-template"
-            />
-            <ProjectLink
-              type="Launch"
-              link="https://mlh-fellowship.github.io/portfolio-template"
-            />
+      <motion.div
+        animate={{ x: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        <div className={projectClass}>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <img src={ProjectPhoto1} className="project-photo" />
+          </motion.div>
+          <div className="project-info">
+            <h2 className="project-title">Personal Portfolio</h2>
+            <p className="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ProjectTechnologies>
+              {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
+            </ProjectTechnologies>
+            <div className="project-links">
+              <ProjectLink
+                type="GitHub"
+                link="https://github.com/MLH-Fellowship/portfolio-template"
+              />
+              <ProjectLink
+                type="Launch"
+                link="https://mlh-fellowship.github.io/portfolio-template"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={projectClass}>
         <img src={ProjectPhoto2} className="project-photo" />
         <div className="project-info">
