@@ -1,18 +1,10 @@
 import React from 'react';
+import Hero from '../components/About/Hero';
 
-const About = () => {
+const Heros = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-        <h1>About</h1>
-    </div>
+    <Hero/>
   );
 };
 
-export default About;
+export default Heros;

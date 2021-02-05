@@ -1,17 +1,9 @@
 import React from 'react';
+import Member from '../components/Member/PodMember';
 
 const Members = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-      <h1>Pod-Members</h1>
-    </div>
+    <Member/>
   );
 };
 

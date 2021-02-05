@@ -1,18 +1,11 @@
 import React from 'react';
+import Home from '../components/Home/home';
 
-const Home = () => {
+
+const home = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-      <h1>Home</h1>
-    </div>
+    <home />
   );
 };
 
-export default Home;
+export default home;
