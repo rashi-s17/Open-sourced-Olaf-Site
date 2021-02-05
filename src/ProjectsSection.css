@@ -6,7 +6,7 @@
   justify-items: start;
 }
 
-.project {
+.project-landscape {
   width: 65vw;
   border-radius: 10px;
   display: flex;
@@ -16,18 +16,31 @@
   padding-right: 1vw;
 }
 
+.project-portrait {
+  width: 65vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 2vh 1vw 3vh 1vw;
+  padding-right: 1vw;
+}
+
+.project-landscape .project-info {
+  text-align: left;
+  margin-left: 7vw;
+}
+
+.project-portrait .project-info {
+  text-align: left;
+}
+
 .project-photo {
   min-width: 40vh;
   max-width: 40vh;
-  height: 30vh;
   overflow: hidden;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.project-info {
-  text-align: left;
-  margin-left: 7vw;
 }
 
 .project-title {
@@ -38,10 +51,19 @@
   font-size: 17px;
 }
 
-.project-links {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vh;
+}
+
+.project-landscape .project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.project-portrait .project-links {
   display: flex;
   flex-direction: row;
 }
@@ -57,11 +79,6 @@
   width: 1.25vw;
   height: 1.25vw;
   object-fit: cover;
-}
-
-.project-tech {
-  display: flex;
-  flex-direction: row;
 }
 
 .tech-name {
