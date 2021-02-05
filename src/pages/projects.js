@@ -1,17 +1,9 @@
 import React from 'react';
+import Project from '../components/Project/ProjectsSection';
 
 const Projects = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-      <h1>Projects</h1>
-    </div>
+    <Project/>
   );
 };
 

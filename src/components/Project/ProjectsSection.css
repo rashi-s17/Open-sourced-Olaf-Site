@@ -1,0 +1,86 @@
+.projects-list {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: start;
+}
+
+.project-landscape {
+  width: 65vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 2vh 1vw 3vh 1vw;
+  padding-right: 1vw;
+}
+
+.project-portrait {
+  width: 65vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 2vh 1vw 3vh 1vw;
+  padding-right: 1vw;
+}
+
+.project-landscape .project-info {
+  text-align: left;
+  margin-left: 7vw;
+}
+
+.project-portrait .project-info {
+  text-align: left;
+}
+
+.project-photo {
+  min-width: 40vh;
+  max-width: 40vh;
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.project-description {
+  font-size: 17px;
+}
+
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vh;
+}
+
+.project-landscape .project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.project-portrait .project-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-link {
+  margin-left: 5px;
+}
+
+.project-link img {
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 1.25vw;
+  width: 1.25vw;
+  height: 1.25vw;
+  object-fit: cover;
+}
+
+.tech-name {
+  margin-right: 20px;
+}
