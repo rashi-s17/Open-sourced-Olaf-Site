@@ -1,14 +1,77 @@
 import "./ProjectsSection.css";
-import ProjectPhoto1 from "../assets/images/ProjectPhoto1.jpg";
-import ProjectPhoto2 from "../assets/images/ProjectPhoto2.jpg";
-import ProjectPhoto3 from "../assets/images/ProjectPhoto3.jpg";
-import GitHubLogo from "../assets/GitHubLogo.png";
-import LaunchIcon from "../assets/LaunchIcon.png";
+import ProjectPhoto1 from "../../assets/images/ProjectPhoto1.jpg";
+import ProjectPhoto2 from "../../assets/images/ProjectPhoto2.jpg";
+import ProjectPhoto3 from "../../assets/images/ProjectPhoto3.jpg";
+import GitHubLogo from "../../assets/GitHubLogo.png";
+import LaunchIcon from "../../assets/LaunchIcon.png";
 import Button from "@material-ui/core/Button";
 import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
+
+const projects = {
+  hidden: { opacity: 0, x: -100 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { staggerChildren: 0.5 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: -100 },
+  show: { opacity: 1, x: 0 },
+};
 
 export default function Projects() {
+  return (
+    <div className="projects-page">
+      <h1>Projects</h1>
+      <motion.div
+        className="projects-list"
+        variants={projects}
+        initial="hidden"
+        animate="show"
+      >
+        <ProjectDiv
+          photo={ProjectPhoto1}
+          title="Personal Portfolio"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          tech={["Jekyll", "HTML", "SCSS", "Static Site"]}
+          links={[
+            {
+              type: "GitHub",
+              link: "https://github.com/MLH-Fellowship/portfolio-template",
+            },
+            {
+              type: "Launch",
+              link: "https://mlh-fellowship.github.io/portfolio-template",
+            },
+          ]}
+        ></ProjectDiv>
+        <ProjectDiv
+          photo={ProjectPhoto2}
+          title="Sample Project"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ></ProjectDiv>
+        <ProjectDiv
+          photo={ProjectPhoto3}
+          title="Sample Project 2"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ></ProjectDiv>
+      </motion.div>
+    </div>
+  );
+}
+
+function ProjectDiv({ photo, title, description, tech, links }) {
   const isNarrow = useMediaQuery({ query: "(max-width: 900px" });
+  var projectClass = isNarrow ? "project-portrait" : "project-landscape";
+  var linksClass = isNarrow
+    ? "project-links-portrait"
+    : "project-links-landscape";
 
   function getTechList(tech) {
     return tech.map((name, index) => (
@@ -18,59 +81,43 @@ export default function Projects() {
     ));
   }
 
-  var projectClass = isNarrow ? "project-portrait" : "project-landscape";
-  var linksClass = isNarrow
-    ? "project-links-portrait"
-    : "project-links-landscape";
+  function getLinksList(links) {
+    return links.map((link, index) => (
+      <ProjectLink
+        key={link["link"] + index}
+        type={link["type"]}
+        link={link["link"]}
+      />
+    ));
+  }
 
   return (
-    <div className="projects-list">
-      <h1>Projects</h1>
-      <div className={projectClass}>
-        <img src={ProjectPhoto1} className="project-photo" />
-        <div className="project-info">
-          <h2 className="project-title">Personal Portfolio</h2>
-          <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <ProjectTechnologies>
-            {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
-          </ProjectTechnologies>
-          <div className="project-links">
-            <ProjectLink
-              type="GitHub"
-              link="https://github.com/MLH-Fellowship/portfolio-template"
-            />
-            <ProjectLink
-              type="Launch"
-              link="https://mlh-fellowship.github.io/portfolio-template"
-            />
-          </div>
-        </div>
+    <motion.div className={projectClass} variants={item}>
+      <img src={photo} className="project-photo" />
+      <div className="project-info">
+        <h2 className="project-title">{title}</h2>
+        <p className="project-description">{description}</p>
+        {tech ? (
+          <ProjectTechnologies>{getTechList(tech)}</ProjectTechnologies>
+        ) : (
+          <div></div>
+        )}
+        {links ? (
+          <ProjectLinks>{getLinksList(links)}</ProjectLinks>
+        ) : (
+          <div></div>
+        )}
       </div>
-      <div className={projectClass}>
-        <img src={ProjectPhoto2} className="project-photo" />
-        <div className="project-info">
-          <h2 className="project-title">Sample Project</h2>
-          <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div className={projectClass}>
-        <img src={ProjectPhoto3} className="project-photo" />
-        <div className="project-info">
-          <h2 className="project-title">Sample Project 2</h2>
-          <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div>
+    </motion.div>
   );
+}
+
+function ProjectTechnologies({ children }) {
+  return <div className="project-tech">{children}</div>;
+}
+
+function ProjectLinks({ children }) {
+  return <div className="project-links">{children}</div>;
 }
 
 function ProjectLink({ type, link }) {
@@ -95,8 +142,4 @@ function ProjectLink({ type, link }) {
       </Button>
     </div>
   );
-}
-
-function ProjectTechnologies({ children }) {
-  return <div className="project-tech">{children}</div>;
 }

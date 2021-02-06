@@ -7,7 +7,7 @@ import {
   NavLogo,
   MobileIcon
 } from './NavbarElements';
-import logo from '../../images/olaf.svg';
+import logo from '../../assets/olaf.svg';
 
 const Navbar = ({ toggle }) => {
   return (
