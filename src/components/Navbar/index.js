@@ -31,6 +31,9 @@ const Navbar = ({ toggle }) => {
           <NavLink to='/projects' activeStyle>
             Projects
           </NavLink>
+          <NavLink to='/snowman' activeStyle>
+            Snowman
+          </NavLink>
         </NavMenu>
       </Nav>
     </>

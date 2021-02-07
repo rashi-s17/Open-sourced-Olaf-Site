@@ -6,6 +6,7 @@ import About from './pages/about';
 import Members from './pages/members';
 import Projects from './pages/projects';
 import Home from './pages/index';
+import Snowman from './pages/snowman'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/members' component={Members} />
         <Route path='/projects' component={Projects} />
+        <Route path='/snowman' component={Snowman} />
       </Switch>
     </Router>
   );
