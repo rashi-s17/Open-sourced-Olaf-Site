@@ -2,6 +2,8 @@
 
 This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship. Our website is fully responsive for a perfect user-experience.
 
+![Alt text](captured.gif)
+
 ## Build Instructions
   
   React.js is used for the frontend with the support of Node.js to serve pages. 
