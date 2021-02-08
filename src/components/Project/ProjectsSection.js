@@ -1,5 +1,5 @@
 import "./ProjectsSection.css";
-import ProjectPhoto1 from "../assets/images/ProjectPhoto1.svg";
+import ProjectPhoto1 from "../assets/images/ProjectPhoto1.png";
 import ProjectPhoto2 from "../assets/images/ProjectPhoto2.svg";
 import ProjectPhoto3 from "../assets/images/ProjectPhoto3.svg";
 import GitHubLogo from "../assets/GitHubLogo.png";
@@ -29,10 +29,9 @@ export default function Projects() {
       <div className={projectClass}>
         <img src={ProjectPhoto1} className="project-photo" />
         <div className="project-info">
-          <h2 className="project-title">Sample Project 1</h2>
+          <h2 className="project-title">Portfolio Website</h2>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Contributed to open-sourced personal portfolio template.
           </p>
           <ProjectTechnologies>
             {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
@@ -58,17 +57,10 @@ export default function Projects() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <ProjectTechnologies>
-            {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
+            {getTechList(["React Native", "Firebase", "Mobile App"])}
           </ProjectTechnologies>
           <div className="project-links">
-            <ProjectLink
-              type="GitHub"
-              link="https://github.com/MLH-Fellowship/portfolio-template"
-            />
-            <ProjectLink
-              type="Launch"
-              link="https://mlh-fellowship.github.io/portfolio-template"
-            />
+            <ProjectLink type="GitHub" link="https://github.com" />
           </div>
         </div>
       </div>
@@ -81,17 +73,14 @@ export default function Projects() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <ProjectTechnologies>
-            {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
+            {getTechList(["Python", "Django", "HTML"])}
           </ProjectTechnologies>
           <div className="project-links">
             <ProjectLink
               type="GitHub"
-              link="https://github.com/MLH-Fellowship/portfolio-template"
+              link="https://github.com/django/django"
             />
-            <ProjectLink
-              type="Launch"
-              link="https://mlh-fellowship.github.io/portfolio-template"
-            />
+            <ProjectLink type="Launch" link="https://www.djangoproject.com/" />
           </div>
         </div>
       </div>
