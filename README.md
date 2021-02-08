@@ -7,7 +7,7 @@ This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking F
 
 # Features
 
-- Feeling bored, don't worry we have that covered too. Help Open Sourced Olaf build yet another snowman :snowman:
+- Feeling bored, don't worry! We've got that covered too. Help Open Sourced Olaf build yet another snowman :snowman:
 - Our website is fully responsive for a perfect user-experience.
 
 ## Build Instructions
