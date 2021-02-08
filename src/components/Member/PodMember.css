@@ -56,13 +56,14 @@
   .project-tech {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     margin-bottom: 1vh;
   }
   
   .project-landscape .project-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   
   .project-portrait .project-links {
@@ -71,7 +72,7 @@
   }
   
   .project-link {
-    margin-left: 5px;
+    margin-right: 1rem;
   }
   
   .project-link img {
@@ -84,7 +85,7 @@
   }
   
   .tech-name {
-    margin-right: 20px;
+    margin-right: 1.5rem;
   }
   
   .member-heading {

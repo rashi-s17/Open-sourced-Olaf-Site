@@ -35,6 +35,7 @@
 
 .project-portrait .project-info {
   text-align: left;
+  margin-top: 2rem;
 }
 
 .project-photo {
@@ -58,7 +59,6 @@
 .project-tech {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -66,7 +66,6 @@
   margin-top: 1.25rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .project-portrait .project-links {
