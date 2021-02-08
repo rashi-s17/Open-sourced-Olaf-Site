@@ -9,7 +9,7 @@ export default function BuildASnowman() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        Do you wanna build a snowman?
+      <p>Do you wanna build a Snowman?</p>
       </motion.h1>
       <motion.div
         className="circle-large"
