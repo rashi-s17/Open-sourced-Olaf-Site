@@ -1,14 +1,13 @@
-import "./ProjectsSection.css";
-import ProjectPhoto1 from "./assets/images/ProjectPhoto1.jpg";
-import ProjectPhoto2 from "./assets/images/ProjectPhoto2.jpg";
-import ProjectPhoto3 from "./assets/images/ProjectPhoto3.jpg";
-import GitHubLogo from "./assets/GitHubLogo.png";
-import LaunchIcon from "./assets/LaunchIcon.png";
+import "./PodMember.css";
+import ProjectPhoto1 from "../assets/images/Avatar.svg";
+import ProjectPhoto2 from "../assets/images/Avatar(1).svg";
+import ProjectPhoto3 from "../assets/images/Avatar(2).svg";
+import GitHubLogo from "../assets/twitter.png";
+import LaunchIcon from "../assets/linkedin.png";
 import Button from "@material-ui/core/Button";
 import { useMediaQuery } from "react-responsive";
-import { motion } from "framer-motion";
 
-export default function Projects() {
+export default function Members() {
   const isNarrow = useMediaQuery({ query: "(max-width: 900px" });
 
   function getTechList(tech) {
@@ -26,41 +25,34 @@ export default function Projects() {
 
   return (
     <div className="projects-list">
-      <h1>Projects</h1>
-      <motion.div
-        animate={{ x: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-      >
-        <div className={projectClass}>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <img src={ProjectPhoto1} className="project-photo" />
-          </motion.div>
-          <div className="project-info">
-            <h2 className="project-title">Personal Portfolio</h2>
-            <p className="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <ProjectTechnologies>
-              {getTechList(["Jekyll", "HTML", "SCSS", "Static Site"])}
-            </ProjectTechnologies>
-            <div className="project-links">
-              <ProjectLink
-                type="GitHub"
-                link="https://github.com/MLH-Fellowship/portfolio-template"
-              />
-              <ProjectLink
-                type="Launch"
-                link="https://mlh-fellowship.github.io/portfolio-template"
-              />
-            </div>
+      <h1>Pod Members</h1>
+      <div className={projectClass}>
+        <img src={ProjectPhoto1} className="project-photo" />
+        <div className="project-info">
+          <h2 className="project-title">Samuel Yuan</h2>
+          <p className="project-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ProjectTechnologies>
+            {getTechList(["Mobile App Development ", "Sports", "Hackathons", "Tech Communities"])}
+          </ProjectTechnologies>
+          <div className="project-links">
+            <ProjectLink
+              type="Twitter"
+              link="https://twitter.com/MLHacks"
+            />
+            <ProjectLink
+              type="LinkedIn"
+              link="https://www.linkedin.com/company/major-league-hacking/"
+            />
           </div>
         </div>
-      </motion.div>
+      </div>
       <div className={projectClass}>
         <img src={ProjectPhoto2} className="project-photo" />
         <div className="project-info">
-          <h2 className="project-title">Sample Project</h2>
+          <h2 className="project-title">Avatar 2</h2>
           <p className="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -70,7 +62,7 @@ export default function Projects() {
       <div className={projectClass}>
         <img src={ProjectPhoto3} className="project-photo" />
         <div className="project-info">
-          <h2 className="project-title">Sample Project 2</h2>
+          <h2 className="project-title">Avatar 3</h2>
           <p className="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -83,9 +75,9 @@ export default function Projects() {
 
 function ProjectLink({ type, link }) {
   function getIcon() {
-    if (type === "GitHub") {
+    if (type === "Twitter") {
       return GitHubLogo;
-    } else if (type === "Launch") {
+    } else if (type === "LinkedIn") {
       return LaunchIcon;
     }
   }
