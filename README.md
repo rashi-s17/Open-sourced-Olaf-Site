@@ -23,8 +23,8 @@ yarn start
  Contributions are always welcome. Feel free to fork and contribute to this project.
  
  ```
-1. Fork this repository.
-2. Clone the forked repository.
+1. Fork this repository
+2. Clone the forked repository
 3. Navigate to your local repository
 4. Run yarn install
 5. Run yarn start
