@@ -18,7 +18,7 @@ This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking F
   1. [NPM](https://www.npmjs.com/)
   2. [node.js](https://nodejs.org/en/)
   
-  - To run locally, use
+  To run locally, use
   ```
 git clone  
 yarn install
