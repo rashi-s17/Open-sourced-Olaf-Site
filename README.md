@@ -1,7 +1,6 @@
 # Pod's Website
 
-This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship.  
-
+This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship. Our website is fully responsive for a perfect user-experience.
 
 ## Build Instructions
   
@@ -38,6 +37,6 @@ yarn start
 
 ## Developers
 
-1. Samuel Yuann
-2. Prashi Doval
-3. Rashi Sharma
+* [Samuel Yuann](https://github.com/YuanSamuel)
+* [Prashi Doval](https://github.com/prashi23)
+* [Rashi Sharma](https://github.com/rashi-s17)
