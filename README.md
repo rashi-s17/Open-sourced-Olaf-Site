@@ -1,8 +1,14 @@
 # Pod's Website
 
-This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship. Our website is fully responsive for a perfect user-experience.
+This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship.
 
 ![Alt text](captured.gif)
+
+
+# Features
+
+- Feeling bored, don't worry we have that covered too. Help Open Sourced Olaf build yet another snowman :snowman:
+- Our website is fully responsive for a perfect user-experience.
 
 ## Build Instructions
   
@@ -12,6 +18,7 @@ This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking F
   1. [NPM](https://www.npmjs.com/)
   2. [node.js](https://nodejs.org/en/)
   
+  - To run locally, use
   ```
 git clone  
 yarn install
