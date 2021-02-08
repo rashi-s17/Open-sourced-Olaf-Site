@@ -24,8 +24,8 @@ export default function Members() {
     : "project-links-landscape";
 
   return (
-    <div className="projects-list">
-      <h1>Pod Members</h1>
+    <div className="member-list" id="members">
+    <h1 class="member-heading">Pod Members</h1>
       <div className={projectClass}>
         <img src={ProjectPhoto1} className="project-photo" />
         <div className="project-info">

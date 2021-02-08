@@ -13,9 +13,12 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     background: #131313;
+    margin-bottom: 80px;
+    padding-bottom: 160px;
 `;
 
 const Container = styled.div`
+
     display: grid;
     padding: 3rem calc((100vw - 1300px) /2);
     grid-template-columns: 1fr 1fr;
@@ -91,6 +94,9 @@ const ColumnRight = styled.div`
      right: 75px;
    }
 
+   @media screen and (max-width: 768px) {
+    display: none;
+}
 
 `;
 
@@ -102,7 +108,7 @@ const Hero = () => {
     }
 
     return (
-        <Section>
+        <Section id="about">
             <Container>
                 <ColumnLeft>
                   <motion.h1

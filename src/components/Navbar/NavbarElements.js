@@ -1,14 +1,19 @@
 import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
+import { Link as Link } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
+  margin-top: -80px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.25rem calc((100vw - 1000px) / 2);
-  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top:0;
+  z-index: 100;
 
   /* Third Nav */
   /* justify-content: flex-start; */
@@ -17,6 +22,16 @@ export const Nav = styled.nav`
   }
 `;
 
+export const NavbarContainer = styled.div`
+   display: flex;
+   justify-content: space-between;
+   height: 80px;
+   z-index: 1;
+   width: 100%;
+   padding: 0 24px;
+   max-width: 1100px;
+
+`
 export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
@@ -91,4 +106,19 @@ export const MobileIcon = styled.div`
 
 export const NavItem = styled.li`
     height:80px;
-`
+    padding-bottom: 2rem;
+`;
+
+export const NavLinks = styled(LinkS)`
+  display: flex;
+  color: #fff;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    color: #15cdfc;
+  }
+`;
