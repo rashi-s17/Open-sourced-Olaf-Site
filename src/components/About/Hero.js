@@ -109,9 +109,10 @@ const Hero = () => {
       <Container>
         <ColumnLeft>
           <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            variants={fadeText}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 1 }}
           >
             Big Warm Welcome to the Open-Sourced Olafs
           </motion.h1>
@@ -123,14 +124,6 @@ const Hero = () => {
           >
             Meet some unique individuals{" "}
           </motion.p>
-          <Button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{
-              scale: 0.95,
-            }}
-          >
-            Wanna hangout?
-          </Button>
         </ColumnLeft>
         <ColumnRight>
           <Image
