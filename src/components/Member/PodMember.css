@@ -62,7 +62,7 @@
   .project-landscape .project-links {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
   }
   
   .project-portrait .project-links {
