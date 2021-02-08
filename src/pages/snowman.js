@@ -1,10 +1,13 @@
 import React from 'react';
-import BuildASnowman from '../components/BuildASnowman/BuildASnowman';
+import Header from './header'
+import Snowman from '../components/BuildASnowman/BuildASnowman.js';
 
-const Snowman = () => {
-  return (
-    <BuildASnowman />
-  );
-};
-
-export default Snowman;
+const snowman = () => {
+    return (
+      <>
+      <Snowman />
+      </>
+    );
+  };
+  
+  export default snowman;

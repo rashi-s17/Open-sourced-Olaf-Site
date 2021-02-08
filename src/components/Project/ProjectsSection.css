@@ -1,12 +1,11 @@
-.projects-page {
+.projects-list {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: start;
-}
-
-.projects-list {
-  min-height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 .project-landscape {
@@ -36,6 +35,7 @@
 
 .project-portrait .project-info {
   text-align: left;
+  margin-top: 2rem;
 }
 
 .project-photo {
@@ -48,24 +48,24 @@
 
 .project-title {
   font-size: 30px;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1rem;
 }
 
 .project-description {
   font-size: 17px;
-  margin-bottom: 2vh;
+  margin-bottom: 1rem;
 }
 
 .project-tech {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2vh;
+  margin-bottom: 1rem;
 }
 
 .project-landscape .project-links {
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: row;
-  justify-content: end;
 }
 
 .project-portrait .project-links {
@@ -88,4 +88,8 @@
 
 .tech-name {
   margin-right: 20px;
+}
+
+.project-heading {
+  font-size: 3rem;
 }

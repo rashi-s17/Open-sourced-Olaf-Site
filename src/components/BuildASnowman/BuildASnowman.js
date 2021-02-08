@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function BuildASnowman() {
   return (
-    <div className="snowman-page">
+    <div className="snowman-page" id="snowman">
       <motion.h1 className="title"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

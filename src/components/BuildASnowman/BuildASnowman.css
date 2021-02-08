@@ -1,94 +1,95 @@
 .projects-page {
-  position: relative;
-}
-
-.title {
-  margin-top: 2vh;
-  text-align: center;
-}
-
-.circle-large {
-  position: absolute;
-  background-color: white;
-  border-color: black;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 4px;
-  width: 15rem;
-  height: 15rem;
-  top: 20vh;
-  left: 40vw;
-}
-
-.circle-medium {
-  position: absolute;
-  background-color: white;
-  border-color: black;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 4px;
-  width: 11rem;
-  height: 11rem;
-  top: 34vh;
-  left: 50vw;
-}
-
-.circle-small {
-  position: absolute;
-  background-color: white;
-  border-color: black;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 4px;
-  width: 8rem;
-  height: 8rem;
-  top: 60vh;
-  left: 20vw;
-}
-
-.coal {
-  position: absolute;
-  background-color: black;
-  border-color: black;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 4px;
-  width: 1rem;
-  height: 1rem;
-  top: 60vh;
-  left: 30vw;
-}
-
-.stick-left {
-  position: absolute;
-  background-color: brown;
-  border-radius: 5px;
-  border-style: none;
-  width: 7rem;
-  height: 0.5rem;
-  top: 90vh;
-  left: 70vw;
-}
-
-.stick-right {
-  position: absolute;
-  background-color: brown;
-  border-radius: 5px;
-  border-style: none;
-  width: 7rem;
-  height: 0.5rem;
-  top: 30vh;
-  left: 75vw;
-}
-
-.carrot {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-radius: 5px;
-  border-top: 0.75rem solid transparent;
-  border-bottom: 0.75rem solid transparent;
-  border-left: 4rem solid orange;
-  top: 40vh;
-  left: 30vw;
-}
+    position: relative;
+  }
+  
+  .title {
+    margin-top: 2vh;
+    text-align: center;
+  }
+  
+  .circle-large {
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 15rem;
+    height: 15rem;
+    top: 20vh;
+    left: 40vw;
+  }
+  
+  .circle-medium {
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 11rem;
+    height: 11rem;
+    top: 34vh;
+    left: 50vw;
+  }
+  
+  .circle-small {
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 8rem;
+    height: 8rem;
+    top: 60vh;
+    left: 20vw;
+  }
+  
+  .coal {
+    position: absolute;
+    background-color: black;
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 1rem;
+    height: 1rem;
+    top: 60vh;
+    left: 30vw;
+  }
+  
+  .stick-left {
+    position: absolute;
+    background-color: brown;
+    border-radius: 5px;
+    border-style: none;
+    width: 7rem;
+    height: 0.5rem;
+    top: 90vh;
+    left: 70vw;
+  }
+  
+  .stick-right {
+    position: absolute;
+    background-color: brown;
+    border-radius: 5px;
+    border-style: none;
+    width: 7rem;
+    height: 0.5rem;
+    top: 30vh;
+    left: 75vw;
+  }
+  
+  .carrot {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border-top: 0.75rem solid transparent;
+    border-bottom: 0.75rem solid transparent;
+    border-left: 4rem solid orange;
+    top: 40vh;
+    left: 30vw;
+  }
+  
