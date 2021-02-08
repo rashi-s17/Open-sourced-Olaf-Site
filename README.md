@@ -7,8 +7,8 @@ This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking F
   React.js is used for the frontend with the support of Node.js to serve pages. 
   
   Pre-requisites: 
-  1. NPM
-  2. NODE.JS
+  1. [NPM](https://www.npmjs.com/)
+  2. [node.js](https://nodejs.org/en/)
   
   ```
 git clone  
