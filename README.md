@@ -30,7 +30,7 @@ yarn start
 7. Pull latest changes from upstream repo
 8. Commit your changes
 9. Push your changes to your fork
-10.Create a Pull Request then Relax and discuss :relaxed: 
+10.Create a Pull Request then Relax and discuss :relaxed
 ```
 
 
