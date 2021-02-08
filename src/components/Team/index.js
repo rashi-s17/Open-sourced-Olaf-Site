@@ -12,8 +12,9 @@ import Member10 from '../assets/images/team/marco.jpg';
 import Member11 from '../assets/images/team/sena.jpeg';
 import Member12 from '../assets/images/team/shrill.jpg';
 import Member13 from '../assets/images/team/sumi.jpg';
-import Member14 from '../assets/images/Avatar(1).svg';
-import Member15 from '../assets/images/Avatar.svg';
+import Member14 from '../assets/images/team/yvon.jpeg';
+import Member15 from '../assets/images/team/prashi.jpg';
+import Member16 from '../assets/images/Avatar.svg';
 
 import {FaTwitter, FaGithub,FaLinkedin } from 'react-icons/fa';
 import {TeamContainer, TeamH1, TeamH2, TeamCard, TeamIcon, TeamP, TeamWrapper, SocialIconLink, SocialIcons} from './TeamElements';
@@ -48,7 +49,7 @@ const Team = () => {
                 <TeamComponent url={Member1} name="Rashika Karki" github="RashikaKarki" twitter="RashikaKarki" linkedin="RashikaKarki" />
                 <TeamComponent url={Member2} name="Samuel Yuan" github="YuanSamuel" twitter="samuelyuan9" linkedin="yuansamuel" />
                 <TeamComponent url={Member3} name="Rashi Sharma" github="rashi-s17" twitter="rashi_s17" linkedin="rashi-s17" />
-                <TeamComponent url={Member14} name="Prashi Doval" github="prashi23" twitter="prashi_doval" linkedin="prashi_doval" />
+                <TeamComponent url={Member15} name="Prashi Doval" github="prashi23" twitter="prashi_doval" linkedin="prashi_doval" />
                 <TeamComponent url={Member5} name="Aitik Gupta" github="aitikgupta" twitter="aitikgupta" linkedin="aitik-gupta" />
                 <TeamComponent url={Member6} name="Anjali Soni" github="anjalisoni3655" twitter="anjalisoni3655" linkedin="anjalisoni3655" />
                 <TeamComponent url={Member8} name="Dean Gladish" github="gladishd" twitter="" linkedin="" />
@@ -59,8 +60,8 @@ const Team = () => {
                 <TeamComponent url={Member4} name="Bodisha Thomas" github="bodhisha" twitter="BodhishaThomas" linkedin="bodhisha" />
                 <TeamComponent url={Member12} name="Shrill Shrestha" github="ShrillShrestha" twitter="" linkedin="" />
                 <TeamComponent url={Member13} name="Sumi Koli" github="sgkolli535" twitter="" linkedin="" />
-                <TeamComponent url={Member15} name="Yvon" github="yvonmanzi" twitter="" linkedin="" />
-                <TeamComponent url={Member15} name="Steven Tey" github="steven-tey" twitter="" linkedin="" />
+                <TeamComponent url={Member14} name="Yvon" github="yvonmanzi" twitter="" linkedin="yvonmanzi" />
+                <TeamComponent url={Member16} name="Steven Tey" github="steven-tey" twitter="" linkedin="" />
             </TeamWrapper>
         </TeamContainer>
     )
