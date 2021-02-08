@@ -47,19 +47,22 @@
 
 .project-title {
   font-size: 30px;
+  margin-bottom: 1rem;
 }
 
 .project-description {
   font-size: 17px;
+  margin-bottom: 1rem;
 }
 
 .project-tech {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1vh;
+  margin-bottom: 1rem;
 }
 
 .project-landscape .project-links {
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -71,7 +74,7 @@
 }
 
 .project-link {
-  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .project-link img {

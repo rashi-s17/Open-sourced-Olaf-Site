@@ -56,6 +56,7 @@ export const TeamIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
+    object-fit: cover
 `
 
 export const TeamH1 = styled.h1`
