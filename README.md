@@ -2,10 +2,10 @@
 
 This is Pod 2.1.2 aka Open Sourced Olafs pod website from Major League Hacking Fellowship.  
 
-# Tech Stack us
-
 
 ## Build Instructions
+  
+  React.js is used for the frontend with the support of Node.js to serve pages. 
   
   Pre-requisites: 
   1. NPM
@@ -18,6 +18,8 @@ yarn start
 ```
   
  ### How to contribute
+ 
+ Contributions are always welcome. Feel free to fork and contribute to this project.
  
  ```
 1. Fork this repository.
