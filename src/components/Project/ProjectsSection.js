@@ -94,9 +94,9 @@ function ProjectDiv({ photo, title, description, tech, links }) {
     if (inView) {
       controls.start("show");
     }
-    if (!inView) {
-      controls.start("hidden");
-    }
+    // if (!inView) {
+    //   controls.start("hidden");
+    // }
   }, [controls, inView]);
 
   const isNarrow = useMediaQuery({ query: "(max-width: 900px" });

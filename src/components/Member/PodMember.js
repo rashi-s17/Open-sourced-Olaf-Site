@@ -25,7 +25,7 @@ export default function Members() {
 
   return (
     <div className="member-list" id="members">
-    <h1 class="member-heading">Pod Members</h1>
+    <h1 className="member-heading">Pod Members</h1>
       <div className={projectClass}>
         <img src={ProjectPhoto1} className="project-photo" />
         <div className="project-info">
