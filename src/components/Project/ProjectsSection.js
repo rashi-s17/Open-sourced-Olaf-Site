@@ -26,7 +26,7 @@ const item = {
 
 export default function Projects() {
   return (
-    <div className="projects-page">
+    <div className="projects-page" id="projects">
       <h1>Projects</h1>
       <motion.div
         className="projects-list"
