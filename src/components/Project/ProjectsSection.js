@@ -37,8 +37,7 @@ export default function Projects() {
         <ProjectDiv
           photo={ProjectPhoto1}
           title="Personal Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Contriubted to open-sourced personal portfolio template."
           tech={["Jekyll", "HTML", "SCSS", "Static Site"]}
           links={[
             {
