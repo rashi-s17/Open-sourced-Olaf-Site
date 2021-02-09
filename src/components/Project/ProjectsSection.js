@@ -131,7 +131,7 @@ function ProjectDiv({ photo, title, description, tech, links }) {
       initial="hidden"
       animate={controls}
     >
-      <img src={photo} className="project-photo" />
+      <motion.img src={photo} className="project-photo" whileHover={{scale: 1.05}}/>
       <div className="project-info">
         <h2 className="project-title">{title}</h2>
         <p className="project-description">{description}</p>
