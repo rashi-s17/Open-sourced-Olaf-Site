@@ -10,7 +10,7 @@ const Footer = () => {
                         Made with <FaHeart/>
                     </WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href="/https://github.com/orgs/Open-Sourced-Olaf/dashboard" target="_blank" aria-label="Github">
+                        <SocialIconLink href="https://github.com/orgs/Open-Sourced-Olaf/dashboard" target="_blank" aria-label="Github">
                             <FaGithub/>
                         </SocialIconLink>
                         <SocialIconLink href="/" target="_blank" aria-label="Twitter">
