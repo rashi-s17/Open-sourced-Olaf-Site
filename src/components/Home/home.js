@@ -28,7 +28,7 @@ const home = () => {
     return(
         <div>
             <h2>hi</h2>
-           <div class="tenor-gif-embed" data-postid="10353703" data-share-method="host" data-width="100%" data-aspect-ratio="1.1369863013698631"><a href="https://tenor.com/view/olaf-frozen-gif-10353703">Olaf Frozen GIF</a> from <a href="https://tenor.com/search/olaf-gifs">Olaf GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>           
+           <div className="tenor-gif-embed" data-postid="10353703" data-share-method="host" data-width="100%" data-aspect-ratio="1.1369863013698631"><a href="https://tenor.com/view/olaf-frozen-gif-10353703">Olaf Frozen GIF</a> from <a href="https://tenor.com/search/olaf-gifs">Olaf GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>           
         </div>
     );
 };
